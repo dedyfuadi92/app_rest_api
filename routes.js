@@ -9,4 +9,6 @@ module.exports = function (app) {
         .get(jsonku.tampilFilterid);
     app.route('/add_id')
         .post(jsonku.tambahData);
+    app.route('/edit_data')
+        .put(jsonku.ubahData);
 };
