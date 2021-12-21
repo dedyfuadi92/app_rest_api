@@ -54,5 +54,19 @@ exports.ubahData = function (req, res) {
             } else {
                 response.ok('Berhasil ubah data', res);
             }
-        });
+        }
+    );
+};
+exports.hapusData = function (req, res) {
+    var id = req.body.id_mahasiswa;
+    connection.query('delete from mahasiswa where id_mahasiswa=?',
+        [id],
+        function (error, rows, fields) {
+            if (error) {
+                console.log(error);
+            } else {
+                response.ok('Berhasil ubah data', res);
+            }
+        }
+    );
 };
