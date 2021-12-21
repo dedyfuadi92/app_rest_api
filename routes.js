@@ -7,4 +7,6 @@ module.exports = function (app) {
         .get(jsonku.tampilSemuaData);
     app.route('/data_id')
         .get(jsonku.tampilFilterid);
+    app.route('/add_id')
+        .post(jsonku.tambahData);
 };
