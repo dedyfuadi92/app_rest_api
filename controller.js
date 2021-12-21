@@ -65,7 +65,7 @@ exports.hapusData = function (req, res) {
             if (error) {
                 console.log(error);
             } else {
-                response.ok('Berhasil ubah data', res);
+                response.ok('Berhasil hapus data', res);
             }
         }
     );
