@@ -5,9 +5,9 @@ module.exports = function (app) {
         .get(jsonku.index);
     app.route('/alldata')
         .get(jsonku.tampilSemuaData);
-    app.route('/data_id')
+    app.route('/filter_data')
         .get(jsonku.tampilFilterid);
-    app.route('/add_id')
+    app.route('/add_data')
         .post(jsonku.tambahData);
     app.route('/edit_data')
         .put(jsonku.ubahData);
